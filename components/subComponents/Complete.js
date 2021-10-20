@@ -9,8 +9,7 @@ import {
   Divider,
 } from 'react-native-paper';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import { Badge,withBadge} from 'react-native-elements';
-
+import {Badge, withBadge} from 'react-native-elements';
 
 const Completed = () => {
   return (
@@ -34,7 +33,7 @@ const Completed = () => {
               }}>
               My Task
             </Text>
-            <View style={{flexDirection: 'row-reverse', bottom: 12}}>
+            <View style={{flexDirection: 'row-reverse', bottom: 12, right: 4}}>
               <Badge value="Completed" status="success" />
             </View>
           </View>
@@ -55,11 +54,13 @@ const Completed = () => {
           </Card.Content>
           <View
             style={{
-              color: '#061210',
               flex: 1,
               flexWrap: 'wrap',
               padding: 8,
               marginTop: 2,
+              height: '100%',
+              width: '100%',
+              backgroundColor: '#061210',
             }}>
             <Card.Actions>
               <View style={{flexDirection: 'column'}}>
@@ -72,20 +73,20 @@ const Completed = () => {
                 </Text>
               </View>
               <View style={{flexDirection: 'row', left: -90, flex: 1}}>
-                <Button>
+                <Button style={{left: 6}}>
                   <Icon name="phone" size={20} color="#33ae93" />
                 </Button>
-                <Button>
+                <Button style={{left: -25}}>
                   <Icon name="envelope-o" size={20} color="#33ae93" />
                 </Button>
               </View>
+              <Icon name="star" size={20} color="#f17c02" />
               <Text
                 style={{
                   color: '#fff',
                   textAlign: 'right',
                   flexDirection: 'row-reverse',
                 }}>
-                <Icon name="star" size={20} color="#f17c02" />
                 4.5
               </Text>
             </Card.Actions>
@@ -103,7 +104,7 @@ const Completed = () => {
               }}>
               My Task
             </Text>
-            <View style={{flexDirection: 'row-reverse', bottom: 12}}>
+            <View style={{flexDirection: 'row-reverse', bottom: 12, right: 4}}>
               <Badge value="Completed" status="success" />
             </View>
           </View>
@@ -124,11 +125,13 @@ const Completed = () => {
           </Card.Content>
           <View
             style={{
-              color: '#061210',
               flex: 1,
               flexWrap: 'wrap',
               padding: 8,
               marginTop: 2,
+              height: '100%',
+              width: '100%',
+              backgroundColor: '#061210',
             }}>
             <Card.Actions>
               <View style={{flexDirection: 'column'}}>
@@ -141,20 +144,20 @@ const Completed = () => {
                 </Text>
               </View>
               <View style={{flexDirection: 'row', left: -90, flex: 1}}>
-                <Button>
+                <Button style={{left: 6}}>
                   <Icon name="phone" size={20} color="#33ae93" />
                 </Button>
-                <Button>
+                <Button style={{left: -25}}>
                   <Icon name="envelope-o" size={20} color="#33ae93" />
                 </Button>
               </View>
+              <Icon name="star" size={20} color="#f17c02" />
               <Text
                 style={{
                   color: '#fff',
                   textAlign: 'right',
                   flexDirection: 'row-reverse',
                 }}>
-                <Icon name="star" size={20} color="#f17c02" />
                 4.5
               </Text>
             </Card.Actions>
@@ -172,7 +175,7 @@ const Completed = () => {
               }}>
               My Task
             </Text>
-            <View style={{flexDirection: 'row-reverse', bottom: 12}}>
+            <View style={{flexDirection: 'row-reverse', bottom: 12, right: 4}}>
               <Badge value="Completed" status="success" />
             </View>
           </View>
@@ -193,11 +196,13 @@ const Completed = () => {
           </Card.Content>
           <View
             style={{
-              color: '#061210',
               flex: 1,
               flexWrap: 'wrap',
               padding: 8,
               marginTop: 2,
+              height: '100%',
+              width: '100%',
+              backgroundColor: '#061210',
             }}>
             <Card.Actions>
               <View style={{flexDirection: 'column'}}>
@@ -210,20 +215,20 @@ const Completed = () => {
                 </Text>
               </View>
               <View style={{flexDirection: 'row', left: -90, flex: 1}}>
-                <Button>
+                <Button style={{left: 6}}>
                   <Icon name="phone" size={20} color="#33ae93" />
                 </Button>
-                <Button>
+                <Button style={{left: -25}}>
                   <Icon name="envelope-o" size={20} color="#33ae93" />
                 </Button>
               </View>
+              <Icon name="star" size={20} color="#f17c02" />
               <Text
                 style={{
                   color: '#fff',
                   textAlign: 'right',
                   flexDirection: 'row-reverse',
                 }}>
-                <Icon name="star" size={20} color="#f17c02" />
                 4.5
               </Text>
             </Card.Actions>
@@ -241,7 +246,7 @@ const Completed = () => {
               }}>
               My Task
             </Text>
-            <View style={{flexDirection: 'row-reverse', bottom: 12}}>
+            <View style={{flexDirection: 'row-reverse', bottom: 12, right: 4}}>
               <Badge value="Completed" status="success" />
             </View>
           </View>
@@ -262,11 +267,13 @@ const Completed = () => {
           </Card.Content>
           <View
             style={{
-              color: '#061210',
               flex: 1,
               flexWrap: 'wrap',
               padding: 8,
               marginTop: 2,
+              height: '100%',
+              width: '100%',
+              backgroundColor: '#061210',
             }}>
             <Card.Actions>
               <View style={{flexDirection: 'column'}}>
@@ -279,20 +286,20 @@ const Completed = () => {
                 </Text>
               </View>
               <View style={{flexDirection: 'row', left: -90, flex: 1}}>
-                <Button>
+                <Button style={{left: 6}}>
                   <Icon name="phone" size={20} color="#33ae93" />
                 </Button>
-                <Button>
+                <Button style={{left: -25}}>
                   <Icon name="envelope-o" size={20} color="#33ae93" />
                 </Button>
               </View>
+              <Icon name="star" size={20} color="#f17c02" />
               <Text
                 style={{
                   color: '#fff',
                   textAlign: 'right',
                   flexDirection: 'row-reverse',
                 }}>
-                <Icon name="star" size={20} color="#f17c02" />
                 4.5
               </Text>
             </Card.Actions>
@@ -322,7 +329,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#040605',
     borderRadius: 10,
     textDecorationColor: '#fff',
-    flexDirection:'row'
+    flexDirection: 'row',
   },
   text: {
     color: '#fff',
