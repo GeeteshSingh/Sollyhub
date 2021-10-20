@@ -4,14 +4,11 @@ import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs
 import {Appbar} from 'react-native-paper';
 import {Provider as PaperProvider} from 'react-native-paper';
 
-
 //importing subcomponents
 
 import Active from './subComponents/Actives';
 import Upcoming from './subComponents/Upcomings';
 import Completed from './subComponents/Complete';
-
-
 
 const Tab = createMaterialTopTabNavigator();
 
@@ -20,17 +17,26 @@ const Task = () => {
   const _handleMore = () => console.log('Shown more');
 
   return (
-    <View style={{flex:1}}>
+    <View style={{flex: 1}}>
       <View>
-        <Appbar.Header>
+        <Appbar.Header style={{backgroundColor: '#011a16'}}>
           <Appbar.BackAction onPress={_goBack} />
-          <Appbar.Content title="My Task"  />
+          <Appbar.Content title="My Task" />
           <Appbar.Action icon="dots-vertical" onPress={_handleMore} />
         </Appbar.Header>
       </View>
       <View style={styles.tabs}>
-        <Tab.Navigator style={styles.tabs}>
-          <Tab.Screen name="Active" component={Active}  />
+        <Tab.Navigator
+          style={styles.tabs}
+          screenOptions={{
+            tabBarInactiveTintColor: '#fff',
+            tabBarActiveTintColor: '#2f4f44',
+            tabBarPressColor: '#fff',
+            tabBarLabelStyle: {fontSize: 12},
+            tabBarItemStyle: {width: 100},
+            tabBarStyle: {backgroundColor: '#121212'},
+          }}>
+          <Tab.Screen name="Active" component={Active} />
           <Tab.Screen name="Upcoming" component={Upcoming} />
           <Tab.Screen name="Completed" component={Completed} />
         </Tab.Navigator>

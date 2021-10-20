@@ -89,6 +89,7 @@ function MyTabs () {
 export default function App() {
   return (
     <NavigationContainer>
+      <StatusBar animated={true} backgroundColor="#011a16" />
       <MyTabs style={styles.container} />
     </NavigationContainer>
   );
@@ -97,6 +98,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    top:0,
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#121212',
