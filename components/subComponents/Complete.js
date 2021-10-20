@@ -24,36 +24,43 @@ const Completed = () => {
           <Card.Title title="My Task" color="#fff" />
           <Card.Content>
             {/* <Title>Card title</Title> */}
-            <Paragraph style={styles.text}>
+            <Text style={styles.text}>
               <Icon name="calendar" size={30} color="#596869" /> 13:00, 2nd
               October, 2021
-            </Paragraph>
-            <Paragraph style={styles.text}>
+            </Text>
+            <Text style={styles.text}>
               <Icon name="location-arrow" size={30} color="#596869" /> Pickup
               location ----- <Icon name="circle" color="#d1851a" /> Drop off
               location
-            </Paragraph>
-            <Paragraph style={{fontSize: 12}}>
-              2972 Westheimer Rd...             3517 W. Gray St.
-            </Paragraph>
-          </Card.Content>
-          <View style={{color:'#061210', flex:1, flexWrap:'wrap', padding:8,marginTop:2}}>
-          <Card.Actions>
-            <Paragraph>
-              Max Doe.
-              {'\n'}
-            </Paragraph>
-            <Button>
-              <Icon name="phone" size={20} color="#33ae93" />
-            </Button>
-            <Button>
-              <Icon name="envelope-o" size={20} color="#33ae93"/>
-            </Button>
-            <Text>
-              {'\n'} <Icon name="star" size={20} color="#f17c02" />
-              4.5
             </Text>
-          </Card.Actions>
+            <Text style={{fontSize: 12}}>
+              2972 Westheimer Rd... 3517 W. Gray St.
+            </Text>
+          </Card.Content>
+          <View
+            style={{
+              color: '#061210',
+              flex: 1,
+              flexWrap: 'wrap',
+              padding: 8,
+              marginTop: 2,
+            }}>
+            <Card.Actions>
+              <Text style={styles.text}>
+                Max Doe.
+                {'\n'}
+              </Text>
+              <Button>
+                <Icon name="phone" size={20} color="#33ae93" />
+              </Button>
+              <Button>
+                <Icon name="envelope-o" size={20} color="#33ae93" />
+              </Button>
+              <Text style={styles.text}>
+                {'\n'} <Icon name="star" size={20} color="#f17c02" />
+                4.5
+              </Text>
+            </Card.Actions>
           </View>
         </Card>
       </View>
@@ -67,8 +74,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingBottom: 70,
-    backgroundColor: '#121212',
-    color: '#121212',
+    backgroundColor: '#131112',
+    color: '#131112',
   },
 
   cards: {
@@ -77,12 +84,12 @@ const styles = StyleSheet.create({
     borderRadius: 2,
     marginBottom: 15,
     color: '#040605',
-    backgroundColor: '#C0C0C0',
+    backgroundColor: '#040605',
     borderRadius: 10,
     textDecorationColor: '#fff',
   },
   text: {
-    color: '#000',
+    color: '#fff',
     paddingTop: 15,
   },
 });
