@@ -46,7 +46,7 @@ const Completed = () => {
               marginTop: 2,
             }}>
             <Card.Actions>
-              <Text style={styles.text}>
+              <Text style={{color: '#3f8f7a'}}>
                 Max Doe.
                 {'\n'}
               </Text>
